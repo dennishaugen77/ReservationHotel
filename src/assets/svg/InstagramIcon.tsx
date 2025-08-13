@@ -11,7 +11,7 @@ export const InstagramIcon: React.FC<IconProps> = ({
   width = 24,
   height = 24,
   className = '',
-  fill = '#fff'
+  fill = '#fff',
 }) => {
   return (
     <svg

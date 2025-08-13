@@ -4,6 +4,11 @@ import { HotelIcon } from './icons/Hotel';
 import { CarIcon } from './icons/CarIcon';
 import { GroupIcon } from './icons/GroupIcon';
 
+interface MenuItem {
+  title: string;
+  icon: React.ReactNode;
+}
+
 export const Hompage = () => {
   return (
     <div className="flex-1 flex flex-col">
@@ -46,7 +51,7 @@ const NavPills = () => {
   );
 };
 
-const PreviewMenuButton = ({ item }: any) => {
+const PreviewMenuButton = ({ item }: { item: MenuItem }) => {
   return (
     <div className="flex gap-2">
       {item.icon}
